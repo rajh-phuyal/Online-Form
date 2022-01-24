@@ -1,0 +1,85 @@
+html, body, nav, footer {
+	margin: 0;
+	padding: 0;
+}
+
+/*header of the webpages*/
+header {
+	background-color: red;
+	margin: 2px; 
+	padding: 10px 20px;
+	height: 70px;
+	text-align: left;
+	color: #ffffff;
+}
+
+header.h1 {
+	font-family: Times New Roman;
+}
+
+/*nav bar*/
+nav {
+	border: 2px red;
+	background-color: black;
+	margin: 2px;
+	padding: 2px; 
+	text-align:left;
+	height: 50px; 
+}
+ul {
+	text-align: right;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: none;
+}
+
+li{
+	float:left;
+}
+
+li a, .dropbtn{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+	background-color: #f10; 
+}
+
+/*extras*/
+hr {
+	height: 3px;
+	border-width: 2;
+	color: #f00000;
+	background-color: #f00000;
+	width: 95%;
+}
+
+/*body of the webpages*/
+body {
+	font: normal 12pt Arial;
+}
+
+.mainSection{
+	background-color: #9ccfdb;
+	margin: 5px;
+	padding: 20px 20px;
+	border: 1px solid grey;
+}
+
+/*footer of the webpage*/
+footer{
+	background-color: #3580e8;
+	color: #fff;
+	text-align: center;
+	font-family: Tahoma;
+	margin: 2px;
+	padding: 1px 4px;
+	height: 60px;
+}

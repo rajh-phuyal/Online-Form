@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Forms</title>
+	<link rel="stylesheet" type="text/css" href="styles/index_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/mainStyles.css">
+	<link rel="shortcut icon" type="image/jpg" href="https://iconarchive.com/download/i94407/bokehlicia/captiva/web-google-forms.ico">
+</head>
+<body>
+	<header>
+		<h1>Online Forms</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li>
+				<a class='active' href='index.html'><b>Register</b></a>
+			</li>
+			<li>
+				<a href="pizzaForm.html"><b>Order pizza</b></a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="mainSection">
+		<div>
+			<form id="user-inputs" onsubmit = "return validateForm()">
+				<fieldset class ="fieldset">
+       				<legend>Personal Informations</legend><br>
+					<label> Username  </label>
+					<input type="text" name="username" autofocus><br><br>
+					<label> Password </label>
+					<input type="password" id="password" placeholder="create a password" required><br><br>
+					<label> Confirm Password </label>
+					<input type="password" name="confirm-password" id="confirm-password"placeholder="repeat the password" required><br><br>
+					<label> Address </label>
+					<input type="text" name="address" onfocus="alterColor(this)" placeholder="Enter your address"><br><br>
+					<label> City/Town </label>
+					<input type="text" name="city"><br><br>
+					<label> Postal Code </label>
+					<input name="postal-code" type="text" pattern="[0-9]{4}-[0-9]{3}"><br><br>
+					<label> Date Of Birth</label>
+					<input type="date" name="dob" min="1910-01-01" max="2030-12-31"><br><br>
+					<label> Email </label>
+					<input type="email" name="email" onfocus="alterColor(this)" placeholder="Enter your email"><br><br>
+					<label> Phone </label>
+					<input type="tel" name="phone" onfocus="alterColor(this)" placeholder="Enter your mobile number"><br><br>
+
+					<label> Gender : </label><br>
+			        	<label> Male </label>
+			            <input name = "gender" type="radio" value="Male" required>
+			        	<label> Female </label>
+			            <input name="gender" type="radio" value="femenino" required><br><br>
+
+			        <label> Course : </label><br>
+			            <input id="9º" type="checkbox" name="prefered-course" value="ninenth">9<sup>th</sup> year
+			            <input id="12º" type="checkbox" name="prefered-course" value ="twelveth">12<sup>th</sup> year
+			            <input id="professonal-course" type="checkbox" name="prefered-course" value="professonal-course">Professonal Course
+			            <input id="Licenciatura" type="checkbox" name="prefered-course" value="masters">Masters
+			            <input id="Licenciatura" type="checkbox" name="prefered-course" value="phd">PHD
+			        	<br><br>
+
+			        <label> I wished to be contacted by </label>
+				        <select id="contact" class="validate" onfocus="alterColor(this)" required>
+				            <option value="">Choose an option</option>
+				            <option value="Email">Email</option>
+				            <option value="Telefone">Telefone</option>
+				            <option value="SMS">SMS</option>
+				        </select>
+				        <br><br>
+
+				    <label> Select your display photo </label>
+			        <input type="file" name="photo" class="btn btn-success" accept="image/png, image/jpeg" single>
+			        <br><br>
+			        
+			        <label for="comment"> Comment </label>
+			        <br>
+			        <textarea id="comment" name="comment" rows="6" cols="100" maxlength ="600">
+			        </textarea>
+
+				</fieldset> 
+	        	<input type="submit" value="Submit">
+	        	<input type="reset" value="Reset">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<h3>&copy;Copyright by Raj Phuyal</h3>
+		<script src="js/index.js"></script>
+	</footer>
+</body>
+</html>

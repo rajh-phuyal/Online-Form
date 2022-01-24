@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Lomino hut Pizza </title>
+	<link rel="stylesheet" type="text/css" href="styles/index_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/mainStyles.css">
+	<link rel="shortcut icon" type="image/jpg" href="https://cdn3.vectorstock.com/i/1000x1000/55/72/sliced-pizza-icon-vector-1265572.jpg">
+</head>
+<body>
+	<header>
+		<h1> Order a pizza </h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li>
+				<a class='active' href='index.html'><b>Register</b></a>
+			</li>
+			<li>
+				<a href="pizzaForm.html"><b>Order pizza</b></a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="mainSection">
+		<section id="form-section">
+		    <form id="formPizza" name="formPizza">
+		    	<fieldset class="fieldset">
+		    		<legend>Order your pizza</legend>
+		            <h3> Pizzas </h3>
+		            <label>Select a pizza : </label>
+		            <select id="select-pizza">
+		                <option value="">Select a pizza</option>
+		                <option value="Margarita">Pizza margarita</option>
+		                <option value="Neapolitan">Neapolitan pizza</option>
+		                <option value="Tropical">Tropical</option>
+		                <option value="Tuna">Tuna</option>
+		            </select>
+		        <div>
+		            <h2> Sizes </h2>
+		            <label> Pequena </label>
+		            <input name="tamanho" type="radio" value="Pequena">
+		            <label>Média </label>
+		            <input name="tamanho" type="radio" value="Media">
+		            <label>Grande </label>
+		            <input name="tamanho" type="radio" value="Granade">
+		        </div>
+		        <div>
+		            <p>
+		                <label><b>Preço Base:</b></label>
+		                <input id="id_Preco" type="text" placeholder="0.00 €" size="3" readonly>
+		            </p>
+		        </div>
+		        <div class="absolute">
+		            <!--<img id="imgPizza"
+		                src="https://thumbs.dreamstime.com/b/pizza-logo-vetora-art-molde-do-logotipo-104601030.jpg" alt="pizza"
+		                style="width: 250px;height: 170px;">-->
+		        </div>
+		        <div>
+		            <p>
+		                <label><b>Quantidade</b></label>
+		                <input id="quantidade_pizza" type="number" style="width: 55px;" placeholder="0">
+		            </p>
+		        </div>
+
+		        <div>
+		            <h2>Ingridientes extra:</h2>
+		            <input id="Extra Queijo" type="checkbox" name="ingridientes_extra" value="Extra Queijo">Extra Queijo
+		            <input id="Peperoni" type="checkbox" name="ingridientes_extra" value="Peperoni">Peperoni
+		            <input id="Chouriço" type="checkbox" name="ingridientes_extra" value="Chouriço">Chouriço
+		            <input id="Azeitonas" type="checkbox" name="ingridientes_extra" value="Azeitonas">Azeitonas
+		            <input id="Cogumelos" type="checkbox" name="ingridientes_extra" value="Cogumelos">Cogumelos
+		        </div>
+		        <!-- Aviso sobre o preço dos ingridientes -->
+		        <p>*Acrescenta +25 cêntimos por ingridientes ao preço base da pizza</p>
+
+		        <div>
+		            <h2>Bebidas:</h2>
+
+		            <label><b>Selecione a bebida</b></label>
+		            <select id="bebidas">
+		                <option value="">Selecione uma bebida</option>
+		                <option value="Active Drink Santal">Active Drink Santal </option>
+		                <option value="Bebida Aquarius Laranja">Bebida Aquarius Laranja</option>
+		                <option value="Ice Tea Chá Verde Lipton Hortelã E Lima">Ice Tea Chá Verde Lipton Hortelã E Lima</option>
+		                <option value="Refrigerante C/ Gas Coca-Cola Light">Refrigerante C/ Gas Coca-Cola Light</option>
+		                <option value="Refrigerante C/ Gas Fanta Guaraná">Refrigerante C/ Gas Fanta Guaraná</option>
+		                <option value="Refrigerante C/ Gás 7Up Lima">Refrigerante C/ Gás 7Up Lima</option>
+		            </select>
+
+		            <p>
+		                <label><b>Quantidade</b></label>
+		                <input id="quantidade_bebidas" type="number" style="width: 55px;" placeholder="0">
+		            </p>
+
+		            <input type="radio" name="bebida" value="Lata" id="Lata"> <label>Lata</label>
+		            <input type="radio" name="bebida" value="1/2 Litro" id="1/2 Litro"> <label>1/2 Litro</label>
+		        </div>
+		        <div>
+		            <h2>Método Pagamento:</h2>
+		            <input type="radio" name="Pagamento" value="Dinheiro" id="id_Dinheiro"> <label>Dinheiro</label>
+		            <input type="radio" name="Pagamento" value="MULTIBANCO" id="id_MULTIBANCO"> <label>MULTIBANCO</label>
+		            <input type="radio" name="Pagamento" value="MBWAY" id="id_MBWAY"> <label>MBWAY</label>
+
+		            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nbap5UJDkhCN2wuGFw4-gQHaHa%26pid%3DApi&f=1"
+		                alt="moeda" width="5%" height="5%">
+		            <img class="img_img"
+		                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fourivesariacatita.pt%2Fwp-content%2Fuploads%2F2015%2F04%2F2000px-Multibanco.svg_.png&f=1&nofb=1"
+		                alt="MULTIBANCO" width="7%" height="7%">
+		            <img class="img_img"
+		                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_MBWay.svg/1200px-Logo_MBWay.svg.png"
+		                alt="MBWAY" width="10%" height="10%">
+
+		        </div>
+		        <div>
+		            <p>
+		                <input type="submit" value="TOTAL" id="btnTotal" class="botoes">
+		                <input type="reset" value="Limpar" id="btnReset" class="botoes">
+		                <input type="text" id="txtTotal" placeholder="0.00 €" readonly>
+		            </p>
+		        </div>
+		  		</fieldset>
+		    </form>
+		</section>
+	</section>
+	<footer>
+		<h2>&copy;Copyright by Raj Phuyal</h2>
+		<script src="js/pizza.js"></script>
+	</footer>
+</body>
+</html>
